@@ -1,8 +1,8 @@
 {
   "name": "skill-intro-voiceover-agent",
   "expertType": "agent",
-  "version": "1.0.0",
-  "description": "Douyin voiceover storyboard director. Turns feature notes into a 30-50s retention-driven script: one viewpoint line, escalating feature steps, a 10-20s micro-hook, and a Remotion-ready frame table with 29 deterministic checks.",
+  "version": "2.0.0",
+  "description": "Promo-video storyboard director. Turns an agent, skill or resume into a 30-90s production.json with three timelines (voiceover, motion, avatar), one viewpoint line, a 10-20s micro-hook, 46 deterministic checks and an edit-ready pack.",
   "author": {
     "name": "李献杰 Lyon",
     "description": "12 年高端猎头，人力百强集团猎头合伙人｜擅长中高管招聘说服、框架梳理、流程 AI 自动化、Agent 编写、降本增效｜浙江杭州｜欢迎沟通交流"
@@ -19,16 +19,16 @@
     "zh": "技能介绍口播稿"
   },
   "displayDescription": {
-    "en": "Turns feature notes into a Douyin voiceover storyboard: viewpoint line, escalating steps, a mid-video hook, and a Remotion-ready frame table with a validator.",
-    "zh": "给功能素材，出抖音口播分镜稿：观点句、递进拆解、中段钩子与 Remotion 帧表，附校验脚本。"
+    "en": "Feature notes in, one production.json out: three timelines, a viewpoint line, a mid-hook, 46 checks.",
+    "zh": "素材进，出 production.json：三条时间线、观点句、中段钩子，附 46 项校验。"
   },
   "profession": {
     "en": "Short Video Voiceover Director",
     "zh": "短视频口播分镜导演"
   },
   "defaultInitPrompt": {
-    "en": "Turn these skill notes into a 38s Douyin voiceover script with a viewpoint line and a micro-hook at 10-20s",
-    "zh": "把这段技能说明写成 38 秒抖音口播稿，带观点句和 10 到 20 秒的微型钩子"
+    "en": "Turn these skill notes into a 38s Douyin promo with all three timelines",
+    "zh": "把这段技能说明写成 38 秒抖音口播稿，三条时间线一次给全"
   },
   "avatar": "avatars/skill-intro-voiceover.png",
   "categoryId": "06-ContentCreative",
@@ -49,16 +49,16 @@
   ],
   "quickPrompts": [
     {
-      "en": "Turn these skill notes into a 38s Douyin voiceover script with a viewpoint line and a micro-hook at 10-20s",
-      "zh": "把这段技能说明写成 38 秒抖音口播稿，带观点句和 10 到 20 秒的微型钩子"
+      "en": "Turn these skill notes into a 38s Douyin promo with all three timelines",
+      "zh": "把这段技能说明写成 38 秒抖音口播稿，三条时间线一次给全"
     },
     {
       "en": "My script loses viewers at 15s, find where the middle breaks and fix it",
       "zh": "我这条口播稿没人看到第 15 秒，帮我查中段哪里断了"
     },
     {
-      "en": "Give me a Remotion-ready frame table with emotion tags and a validator pass",
-      "zh": "按这套骨架出 Remotion 能直接渲染的帧表和情绪标注"
+      "en": "Give me a Remotion-ready production.json plus SRT and storyboard for editing",
+      "zh": "出 Remotion 能直接渲染的 production.json，并导出剪映能用的字幕和分镜"
     }
   ]
 }

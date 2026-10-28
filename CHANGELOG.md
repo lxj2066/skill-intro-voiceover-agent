@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## 2.0.0
+
+技术层重写为双时间线，新增个人介绍分支与剪辑落地。判据 29 项扩到 46 项，主版本升级。
+
+**三条时间线**
+- `scriptTimeline[]` 只放会被念出来的字，`voiceover_pure` 是唯一 TTS 字段。
+- `motionTimeline[]` 用五种锚点挂到口播，不再写绝对帧。
+- `avatarTimeline[]` 独立调度数字人，三档模式跟着叙事段走。
+- 依赖 TTS 的锚点强制 `resolve_after_tts: true`，两阶段解析。
+
+**两类内容**
+- `agent_skill`：观点句、功能递进、中段钩子、收藏暗示、粉丝群。
+- `personal_intro`：人设句、记忆点三件套、合作接口三项、数字人调度。
+- 新增 D 组事实判据：数字进 `claims.source`，角色进 `role_tag`，极限词拦截。
+
+**九组 46 项**
+A 6 / B 8 / C 7 / D 3 / E 3 / F 4 / G 4 / H 6 / I 5。未启用数字人时 F 组跳过，不虚增分母。
+
+**交付**
+- 新增 `export_edit_pack.py`：tts.txt、captions.srt、storyboard.csv、remotion-props.json、remotion-notes.md、edit-guide.md。
+- 新增 `references/editing-toolchain.md`：Remotion、剪映、数字人三条路径与时长对照。
+- `scaffold.py` 支持两类内容与平台切换，微型钩子前定长。
+- 安全区改为抖音上 100 下 200、小红书 3:4 下 120。
+
+**校验**
+- 三份用例：38 秒工具稿 42/42、60 秒个人稿 46/46、反例命中 11 项。
+- 渲染坑从 21 条补到 26 条。
+
 ## 1.0.0
 
 首版。把一份“渲染规格书”级的抖音口播提示词，升级成带确定性判据的完整包。
